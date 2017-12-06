@@ -1,0 +1,7 @@
+
+
+target 'MovieApp' do
+# your other pod
+# ...
+pod 'Kingfisher', '~> 4.0'
+end
