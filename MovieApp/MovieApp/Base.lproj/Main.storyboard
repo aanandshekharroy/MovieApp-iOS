@@ -31,8 +31,8 @@
         <!--Root View Controller-->
         <scene sceneID="cJk-CI-FaS">
             <objects>
-                <tableViewController id="cVf-E9-uT5" customClass="MoviewViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wp7-Sm-CnS">
+                <tableViewController id="cVf-E9-uT5" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wp7-Sm-CnS" userLabel="TableView" customClass="MovieViewController" customModule="MovieApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,10 +46,6 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="cVf-E9-uT5" id="oL3-TE-IhG"/>
-                            <outlet property="delegate" destination="cVf-E9-uT5" id="wIt-rj-AuZ"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="emi-wz-XMY"/>
                 </tableViewController>

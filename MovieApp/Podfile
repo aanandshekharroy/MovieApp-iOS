@@ -1,7 +1,12 @@
 
 
 target 'MovieApp' do
+  use_frameworks!
+
 # your other pod
 # ...
 pod 'Kingfisher', '~> 4.0'
+pod 'Alamofire', '~> 4.5'
+pod 'SwiftyJSON'
+
 end
