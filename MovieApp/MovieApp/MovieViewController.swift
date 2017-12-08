@@ -29,7 +29,7 @@ class MovieViewController: UIViewController {
                     for m in movieArray!{
                         self.movies.append(try Movie(parameter: m))
                     }
-                    print(self.movies)
+//                    print(self.movies)
                     self.tableView.reloadData()
                 }catch{
                     
@@ -58,11 +58,20 @@ extension MovieViewController:UITableViewDelegate, UITableViewDataSource{
         let movie = movies[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseId) as UITableViewCell!
         cell?.textLabel?.text = movie.title
+        cell?.imageView?.kf.indicatorType = .activity
+//        cell?.imageView.kf.setImage(with: url)
         cell?.imageView?.kf.setImage(with: URL(string:"http://image.tmdb.org/t/p/w185/\(movie.poster_path)"))
+//        cell?.imageView?.image
         if let detailTextLabel = cell?.detailTextLabel {
             detailTextLabel.text = movie.overview
         }
         return cell!
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let detailController = self.storyboard!.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        detailController.movie = self.movies[indexPath.row]
+        self.navigationController!.pushViewController(detailController, animated: true)
     }
 }
 

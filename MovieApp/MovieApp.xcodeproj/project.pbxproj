@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500BACE11FDA2F1200081D78 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BACE01FDA2F1200081D78 /* DetailViewController.swift */; };
 		50B3B1B31FD78D3A000A73D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3B1B21FD78D3A000A73D4 /* AppDelegate.swift */; };
 		50B3B1B51FD78D3A000A73D4 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3B1B41FD78D3A000A73D4 /* MovieViewController.swift */; };
 		50B3B1B81FD78D3A000A73D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B3B1B61FD78D3A000A73D4 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1C8D25CC730ED709D5AE30F0 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
+		500BACE01FDA2F1200081D78 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		50B3B1AF1FD78D3A000A73D4 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B3B1B21FD78D3A000A73D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B3B1B41FD78D3A000A73D4 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				50B3B1C61FD7B3F3000A73D4 /* SettingsViewController.swift */,
 				50B3B1C81FD7BE6E000A73D4 /* DataManager.swift */,
 				50B3B1CA1FD7F7B1000A73D4 /* Movie.swift */,
+				500BACE01FDA2F1200081D78 /* DetailViewController.swift */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				50B3B1B31FD78D3A000A73D4 /* AppDelegate.swift in Sources */,
 				50B3B1C51FD7B231000A73D4 /* Constants.swift in Sources */,
 				50B3B1C71FD7B3F3000A73D4 /* SettingsViewController.swift in Sources */,
+				500BACE11FDA2F1200081D78 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
